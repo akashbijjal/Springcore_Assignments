@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <beans>
+
+	<bean id="question" class="model.question">
+		<property name="questionid" value="01" />
+		<property name="question" value="How are you?" />
+		<property name="answer">
+			<list>
+				<value>I am fine</value>
+				<value>I am good</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="question01" class="model.question01">
+		<property name="questionid" value="02" />
+		<property name="question" value="Where are you from?" />
+		<property name="answer">
+			<set>
+				<value>Bengaluru</value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+	</bean>  
+	
+	
+	<bean id="question03" class="model.question03">
+	<property name="questionid" value="02" />
+	<property name="question" value="Where are you from?" />
+	<property name="answer">
+		<map>
+			<entry key="01" value="hyderabad" />
+			<entry key="02" value="chennai" />
+
+		</map>
+
+
+
+	</property>
+	
+	</bean>
+        </beans>
+      
+        
+  <beans>
+  </beans>   
+  </beans> 
